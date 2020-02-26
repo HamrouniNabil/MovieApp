@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 
+
 export default class Add extends Component {
   state = {
     title: "",
     rate: 0,
     image: "",
     categorie:"",
+
   };
   handleChange = e => {
     this.setState({
@@ -86,7 +88,9 @@ export default class Add extends Component {
                     <option>Film de science-fiction</option>
                     <option>Film d'Aventure</option>
                     <option>Film Dramatique</option>
-                    <option>Film D'horreur</option></select>
+                    <option>Film D'horreur</option>
+                    
+                    </select>
                   </div>
                   <div className="form-group">
                     <label htmlFor="rate">Movie Rate</label>

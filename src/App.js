@@ -13,7 +13,7 @@ class App extends React.Component {
         image:
           "https://img.over-blog-kiwi.com/1/50/78/51/20180702/ob_47caba_perdus-dans-l-espace-photo-perdus-dans.jpg",
         categorie:"Film de science-fiction‎",
-        rate: 0
+        rate: 3
       },
       {
         id: Date.now(),
@@ -36,10 +36,15 @@ class App extends React.Component {
     searchRate: 0
   };
   addMovie = x => {
+   
     this.setState({
       movieArray: [...this.state.movieArray, x]
-    });
-  };
+    })
+  }
+  
+      
+    
+    
   render() {
     return (
       <div className="App">
